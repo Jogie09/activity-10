@@ -13,6 +13,7 @@ class ExportFile extends Controller
         $users    = DB::table('users')->get();
         $filename = "users-masterlist.csv";
 
+
         $header = [
             'Content-Type' => 'text/csv',
             'Content-Disposition' => 'attachment; filename="'. $filename .'"'
